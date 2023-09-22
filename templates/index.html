@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecasting Parameters</title>
+</head>
+<body>
+    <h1>Forecasting Parameters</h1>
+    <form method="POST">
+        <label for="cycle">Cycle:</label>
+        <input type="text" name="cycle" required><br>
+
+        <label for="n_cycles">Number of Cycles:</label>
+        <input type="text" name="n_cycles" required><br>
+
+        <label for="neuron1">Neuron 1:</label>
+        <input type="text" id="neuron1" name="neuron1" >
+        <label for="neuron2">Neuron 2:</label>
+        <input type="text" id="neuron2" name="neuron2" >
+        <label for="neuron3">Neuron 3:</label>
+        <input type="text" id="neuron3" name="neuron3">
+
+
+        <label for="batch_size">Batch Size:</label>
+        <input type="text" name="batch_size" required><br>
+
+        <label for="epochs">Epochs:</label>
+        <input type="text" name="epochs" required><br>
+
+        <label for="dropout">Dropout:</label>
+        <input type="text" name="dropout" required><br>
+
+        <label for="learning_rate">Learning Rate:</label>
+        <input type="text" name="learning_rate" required><br>
+
+        <label for="version">Version:</label>
+        <select name="version">
+            <option value="simple_shift">Simple Shift</option>
+            <option value="shift_cycle">Shift Cycle</option>
+        </select><br>
+
+        <input type="submit" value="Run Forecasting">
+    </form>
+</body>
+</html>

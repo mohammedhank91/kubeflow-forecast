@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt
+RUN --mount=type=cache,target=/root/.cache/pip pip install -r requirements.txt
 
  
 CMD ["python", "main_shift_cycle.py"]

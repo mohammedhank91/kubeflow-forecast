@@ -11,7 +11,5 @@ COPY . /app
 RUN pip install -r requirements.txt
 
  
-
-# run app  on port 8090
-CMD ["python", "main_shit_cycle.py"]
+CMD ["python", "main_shift_cycle.py"]
 
